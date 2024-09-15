@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    font-family: Sora, sans-serif;
+    /* Adiciona uma fonte de fallback */
+    box-sizing: border-box;
+    /* Inclui padding e border no cálculo da largura e altura */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.container-fluid a {
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+    /* Ajusta a transição para ser mais suave */
+}
+
+.container-fluid a:hover {
+    color: #474747;
+    transform: scale(1.1);
+}
+
+.banner-img {
+    width: 100vw;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    position: relative;
+    /* Garante que elementos posicionados absolutamente fiquem dentro do contêiner */
+    height: 30vw;
+    /* Ajusta a altura do carrossel */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100vw;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.icons-container {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    left: 5%;
+}
+
+.orçamento{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background-color: #ffd700;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.orçamento:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.icon {
+    font-size: 30px;
+    color: #ffd700;
+}
+
+.icons-container p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+#sobre,
+#tratamentos,
+#clientes,
+#contato {
+    padding: 60px 20px;
+}
+
+#sobre h2,
+#tratamentos h2,
+#clientes h2,
+#contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 1rem;
+}
+
+/* Ajustes gerais */
+.sobre-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    /* Espaçamento entre imagem e texto */
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    /* Centraliza a imagem */
+}
+
+.sobre-img {
+    width: 100%;
+    max-width: 400px;
+    /* Tamanho máximo da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 2;
+    text-align: left;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.text-container span {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.text-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text-container li {
+    margin-bottom: 10px;
+}
+
+.sobre-container i {
+    margin-right: 10px;
+}
+
+.text-container button {
+    background-color: #ffd700;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 1s ease;
+    text-transform: uppercase;
+}
+
+.text-container button:hover {
+    background-color: #f1d73f;
+    transform: scale(1.1);
+    color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        /* Em telas menores, a imagem e o texto ficam empilhados */
+    }
+
+    .text-container {
+        text-align: center;
+        /* Centraliza o texto em telas menores */
+    }
+
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-img {
+        max-width: 100%;
+        /* Aumenta a largura da imagem em telas menores */
+    }
+}
+
+.buttons {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    transition: 2s;
+    margin-top: 20px;
+}
+
+.buttons:hover {
+    transform: scale(1.1);
+}
+
+
+#detalhes-planos .row {
+    margin-bottom: 50px;
+}
+
+/* Estilo das imagens */
+#detalhes-planos .plano-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Alinha o texto à esquerda e mantém o layout responsivo */
+#detalhes-planos h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#detalhes-planos p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.titulo {
+    font-weight: 700;
+    text-decoration: overline;
+}
+
+#detalhes-planos ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#detalhes-planos ul li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    position: relative;
+    color: white;
+    margin-left: 20px;
+}
+
+#detalhes-planos ul li:before {
+    content: "\2023";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Estilo da seção de benefícios */
+#benefits {
+    background-color: #f8f9fa;
+}
+
+#benefits h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.benefit-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.benefit-box h4 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.benefit-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.benefit-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajusta o tamanho dos quadrados e o espaçamento */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col-md-3 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* Estilo da seção de contato */
+#contato {
+    background-color: #000;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#contato p {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.buttons1 {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    transition: 2s;
+    margin-top: 20px;
+    text-decoration: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.buttons1:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.buttons2 {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    transition: 2s;
+    margin-top: 20px;
+    text-decoration: none;
+    width: 50%;
+}
+
+.buttons2:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.contato {
+    color: black;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.bi-instagram {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.fundo {
+    background-color: black;
+}

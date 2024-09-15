@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Izlu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand">Studio Izlu</a>
+        </div>
+    </nav>
+    <!-- Carrossel Bootstrap -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/moto.png" class="d-block banner-img" alt="Moto">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carro1.png" class="d-block banner-img" alt="Carro 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carro2.png" class="d-block banner-img" alt="Carro 2">
+            </div>
+        </div>
+
+        <!-- Adicionando a logo centralizada -->
+        <div class="logo-container">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+            <div class="icons-container">
+                <div class="icon-item">
+                    <i class="bi bi-wrench icon"></i>
+                    <p><strong><em>Reparos Rápidos</em></strong></p>
+                </div>
+                <div class="icon-item">
+                    <i class="bi bi-telephone icon"></i>
+                    <p><strong><em>Atendimento imediato</em></strong></p>
+                </div>
+                <div class="icon-item">
+                    <i class="bi bi-chat-dots icon"></i>
+                    <p><strong><em>Orçamento foto via WhatsApp</em></strong></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="p-5 bg-light sobre-section">
+        <div class="container sobre-container">
+            <div class="image-container">
+                <img src="./img/Sobre.jpeg" alt="Sobre Nós" class="sobre-img">
+            </div>
+            <div class="text-container">
+                <h1><strong style="    text-decoration: overline;">FEITO PRA DURAR</strong></h1>
+                <p><span><em>Especialistas em Cuidados Automotivos</em></span></p>
+                <p>Nossa equipe <strong>oferece uma variedade de serviços</strong> para garantir que seu veículo esteja
+                    sempre protegido
+                    e com a melhor aparência possível.</p>
+                <ul>
+                    <li>Lavagem Tradicional e Técnica</li>
+                    <li>Lavagem Técnica de Motor</li>
+                    <li>Remoção de Chuva Ácida</li>
+                    <li>Cristalização em Vidros</li>
+                    <li>Vitrificação - Pintura | Plástico | Couro | Farol</li>
+                    <li>Polimento Comercial e Técnico - Carro | Moto | Jetski</li>
+                    <li>Higienização - Bancos | Plástico | Teto | Carpete</li>
+                    <li>Proteções - Cera | Selante | Vitrificador</li>
+                </ul>
+                <a class="buttons2" href="#contato"><i class="bi bi-bag-fill"></i>Realize o seu orçamento!</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="detalhes-planos" class="p-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-5 text-light text-uppercase titulo">O Que Inclui Cada Plano</h2>
+
+            <!-- Plano Ouro -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h4>Plano Ouro</h4>
+                    <p>O pacote mais completo para quem deseja o melhor tratamento para seu veículo. Inclui:</p>
+                    <ul>
+                        <li>Vitrificação de pintura e vidros</li>
+                        <li>Polimento técnico e comercial</li>
+                        <li>Higienização profunda de bancos, carpete e teto</li>
+                        <li>Proteção avançada com selante e vitrificador</li>
+                        <a class="buttons2" href="#contato">AGENDE O SEU HORÁRIO!</a>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/ouro.jpg" alt="Plano Ouro" class="img-fluid plano-img">
+                </div>
+            </div>
+
+            <!-- Plano Prata -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 order-md-2">
+                    <h4>Plano Prata</h4>
+                    <p>Para quem busca uma proteção intermediária e cuidados essenciais. Inclui:</p>
+                    <ul>
+                        <li>Polimento comercial</li>
+                        <li>Cristalização em vidros</li>
+                        <li>Remoção de chuva ácida</li>
+                        <li>Higienização detalhada do interior</li>
+                        <a class="buttons2" href="#contato">AGENDE O SEU HORÁRIO!</a>
+
+                    </ul>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="img/prata.jpg" alt="Plano Prata" class="img-fluid plano-img">
+                </div>
+            </div>
+
+            <!-- Plano Bronze -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4>Plano Bronze</h4>
+                    <p>O plano básico para quem deseja manter o veículo limpo e protegido. Inclui:</p>
+                    <ul>
+                        <li>Lavagem tradicional</li>
+                        <li>Proteção com cera</li>
+                        <li>Limpeza geral interna e externa</li>
+                        <a class="buttons2" href="#contato">AGENDE O SEU HORÁRIO!</a>
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/bronze.jpg" alt="Plano Bronze" class="img-fluid plano-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Por Que Escolher Nossos Serviços?</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-tools mb-3 benefit-icon"></i>
+                        <h4>Tecnologia Avançada</h4>
+                        <p>Utilizamos equipamentos de ponta para garantir resultados precisos e duradouros.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-clipboard-check mb-3 benefit-icon"></i>
+                        <h4>Garantia de Satisfação</h4>
+                        <p>Compromisso com a entrega de resultados que superam as expectativas.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-shield-check mb-3 benefit-icon"></i>
+                        <h4>Segurança e Proteção</h4>
+                        <p>Cuidado extremo com o seu veículo em todas as etapas do processo.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-clock mb-3 benefit-icon"></i>
+                        <h4>Rapidez e Eficiência</h4>
+                        <p>Reparos rápidos sem comprometer a qualidade.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-hourglass-split mb-3 benefit-icon"></i>
+                        <h4>Resultados Duradouros</h4>
+                        <p>Garantia de serviços que resistem ao tempo e às condições adversas.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-person-lines-fill mb-3 benefit-icon"></i>
+                        <h4>Atendimento Personalizado</h4>
+                        <p>Foco nas necessidades específicas de cada cliente.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-star mb-3 benefit-icon"></i>
+                        <h4>Feedback Positivo</h4>
+                        <p>Alta taxa de satisfação e recomendações de clientes satisfeitos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                    <div class="benefit-box text-center p-4 flex-grow-1">
+                        <i class="bi bi-people mb-3 benefit-icon"></i>
+                        <h4>Experiência e Expertise</h4>
+                        <p>Anos de atuação no mercado com uma equipe altamente qualificada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="p-5 fundo">
+        <div class="container text-center">
+            <h2 class="mb-4 text-light contato">Entre em Contato Conosco</h2>
+            <p class="mb-4 text-light">Tem alguma dúvida ou deseja saber mais sobre nossos serviços? Fale conosco pelo
+                Instagram!
+            </p>
+            <a href="https://www.instagram.com/studio.izlu/" target="_blank" class="buttons1">
+                <i class="bi bi-instagram"></i> Enviar sua mensagem
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 text-light">
+        <p>&copy; 2024 Studio Izlu. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
