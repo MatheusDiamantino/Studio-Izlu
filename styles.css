@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+
 * {
     font-family: Sora, sans-serif;
-    /* Adiciona uma fonte de fallback */
     box-sizing: border-box;
-    /* Inclui padding e border no cálculo da largura e altura */
 }
 
 body {
@@ -20,7 +19,6 @@ body {
 .container-fluid a {
     color: white;
     transition: color 0.3s, transform 0.3s;
-    /* Ajusta a transição para ser mais suave */
 }
 
 .container-fluid a:hover {
@@ -29,21 +27,19 @@ body {
 }
 
 .banner-img {
-    width: 100vw;
-    height: 30vw;
+    width: 100%;
+    height: 80vh;
     object-fit: cover;
 }
 
 .carousel-inner {
     position: relative;
-    /* Garante que elementos posicionados absolutamente fiquem dentro do contêiner */
-    height: 30vw;
-    /* Ajusta a altura do carrossel */
+    height: auto;
 }
 
 .carousel-item {
     flex: 0 0 auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .logo-container {
@@ -63,25 +59,25 @@ body {
 
 .icons-container {
     display: flex;
-    gap: 150px;
+    gap: 20px;
     justify-content: center;
     margin: 0 auto;
     align-items: center;
-    position: relative;
-    left: 5%;
+    flex-wrap: wrap;
 }
 
-.orçamento{
+
+.orçamento {
     font-weight: 700;
     text-decoration: none;
     color: black;
     background-color: #ffd700;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    transition: 1s;
+    transition: transform 0.3s;
 }
 
-.orçamento:hover{
+.orçamento:hover {
     transform: scale(1.1);
     color: black;
 }
@@ -102,10 +98,12 @@ body {
     background: url('hero-image.jpg') no-repeat center center;
     background-size: cover;
     color: white;
+    padding: 2rem;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #sobre,
@@ -145,10 +143,10 @@ footer {
     /* Espaçamento entre imagem e texto */
 }
 
+/* Estilo da imagem */
 .image-container {
     flex: 1;
     text-align: center;
-    /* Centraliza a imagem */
 }
 
 .sobre-img {
@@ -159,6 +157,7 @@ footer {
     border-radius: 10px;
 }
 
+/* Estilo do texto */
 .text-container {
     flex: 2;
     text-align: left;
@@ -192,10 +191,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.sobre-container i {
-    margin-right: 10px;
-}
-
 .text-container button {
     background-color: #ffd700;
     color: black;
@@ -211,6 +206,10 @@ footer {
     background-color: #f1d73f;
     transform: scale(1.1);
     color: black;
+}
+
+.text-container i {
+    margin-right: 10px;
 }
 
 /* Responsividade */
@@ -235,7 +234,9 @@ footer {
     }
 }
 
-.buttons {
+
+.buttons,
+.buttons1 {
     background-color: #ffd700;
     color: black;
     border: none;
@@ -245,14 +246,85 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
-    transition: 2s;
+    transition: transform 0.3s;
     margin-top: 20px;
+    text-decoration: none;
 }
 
-.buttons:hover {
+.buttons2 {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .buttons,
+    .buttons1,
+    .buttons2 {
+        padding: 0.5rem 0.75rem;
+        /* Ajusta o padding para telas menores */
+        font-size: 0.875rem;
+        /* Reduz o tamanho da fonte */
+        margin-top: 15px;
+        /* Ajusta a margem superior */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .buttons,
+    .buttons1,
+    .buttons2 {
+        padding: 0.5rem 0.5rem;
+        /* Reduz ainda mais o padding em telas muito pequenas */
+        font-size: 0.75rem;
+        /* Reduz o tamanho da fonte em telas muito pequenas */
+        margin-top: 10px;
+        /* Ajusta a margem superior em telas muito pequenas */
+    }
+}
+
+.buttons:hover,
+.buttons1:hover,
+.buttons2:hover {
     transform: scale(1.1);
 }
 
+.buttons1,
+.buttons2 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.buttons2 {
+    width: 50%;
+}
+
+
+
+.contato {
+    color: black;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.bi-instagram {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.fundo {
+    background-color: black;
+}
 
 #detalhes-planos .row {
     margin-bottom: 50px;
@@ -276,7 +348,6 @@ footer {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: white;
-
 }
 
 .titulo {
@@ -390,62 +461,4 @@ footer {
     font-size: 1.125rem;
     color: #555;
     margin-bottom: 2rem;
-}
-
-.buttons1 {
-    background-color: #ffd700;
-    color: black;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: block;
-    transition: 2s;
-    margin-top: 20px;
-    text-decoration: none;
-    width: 60%;
-    margin: 0 auto;
-}
-
-.buttons1:hover {
-    transform: scale(1.1);
-    color: black;
-}
-
-.buttons2 {
-    background-color: #ffd700;
-    color: black;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: block;
-    transition: 2s;
-    margin-top: 20px;
-    text-decoration: none;
-    width: 50%;
-}
-
-.buttons2:hover {
-    transform: scale(1.1);
-    color: black;
-}
-
-.contato {
-    color: black;
-    text-decoration: overline;
-    text-transform: uppercase;
-}
-
-.bi-instagram {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-}
-
-.fundo {
-    background-color: black;
 }
