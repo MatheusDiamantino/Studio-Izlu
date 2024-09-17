@@ -58,12 +58,59 @@ body {
 }
 
 .icons-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 20px;
-    justify-content: center;
     margin: 0 auto;
+    max-width: 500px;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    font-size: 40px;
+    color: #ffd700;
+}
+
+.icon-item p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #ffd700;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .icons-container {
+        gap: 10px;
+        left: 15px;
+        position: relative;
+    }
+
+    .icon {
+        font-size: 35px;
+    }
+
+    .icon-item p {
+        font-size: 14px;
+    }
+
+    .text-container em{
+        text-align: center;
+        display: flex;
+    }
+
+    .text-container p{
+        text-align: center;
+    }
 }
 
 
@@ -80,18 +127,6 @@ body {
 .orçamento:hover {
     transform: scale(1.1);
     color: black;
-}
-
-.icon {
-    font-size: 30px;
-    color: #ffd700;
-}
-
-.icons-container p {
-    margin-top: 5px;
-    font-size: 16px;
-    color: #ffd700;
-    text-transform: uppercase;
 }
 
 .hero {
@@ -220,8 +255,14 @@ footer {
     }
 
     .text-container {
+        text-align: left;
+    }
+
+    .text-container .buttons2 {
+        display: block;
+        padding: .5rem 1rem;
+        width: 100%;
         text-align: center;
-        /* Centraliza o texto em telas menores */
     }
 
     .text-container h1 {
@@ -231,6 +272,18 @@ footer {
     .sobre-img {
         max-width: 100%;
         /* Aumenta a largura da imagem em telas menores */
+    }
+
+    .text-container ul {
+        margin-left: 0;
+    }
+
+    .container #contato h2 {
+        font-size: 10px;
+    }
+
+    .buttons1 {
+        width: 100%;
     }
 }
 
@@ -264,20 +317,6 @@ footer {
     text-decoration: none;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-
-    .buttons,
-    .buttons1,
-    .buttons2 {
-        padding: 0.5rem 0.75rem;
-        /* Ajusta o padding para telas menores */
-        font-size: 0.875rem;
-        /* Reduz o tamanho da fonte */
-        margin-top: 15px;
-        /* Ajusta a margem superior */
-    }
-}
 
 @media (max-width: 480px) {
 
@@ -290,6 +329,7 @@ footer {
         /* Reduz o tamanho da fonte em telas muito pequenas */
         margin-top: 10px;
         /* Ajusta a margem superior em telas muito pequenas */
+        width: 100%;
     }
 }
 
@@ -299,10 +339,17 @@ footer {
     transform: scale(1.1);
 }
 
-.buttons1,
 .buttons2 {
     width: 60%;
     margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.buttons1 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .buttons2 {
@@ -318,6 +365,11 @@ footer {
 }
 
 .bi-instagram {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.bi-whatsapp {
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
@@ -461,4 +513,27 @@ footer {
     font-size: 1.125rem;
     color: #555;
     margin-bottom: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .buttons,
+    .buttons1,
+    .buttons2 {
+        padding: 0.5rem 0.75rem;
+        /* Ajusta o padding para telas menores */
+        font-size: 0.875rem;
+        /* Reduz o tamanho da fonte */
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    #contato h2 {
+        font-size: 1.5rem;
+    }
+
+    #detalhes-planos ul li {
+        margin-bottom: 20px;
+    }
 }
